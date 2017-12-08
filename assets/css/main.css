@@ -2379,7 +2379,7 @@ left: 5px;
 		border: 0;
 		display: inline-flex;
 		position: relative;
-		width: 100%;
+		width: 80%;
 		float: left;
 			text-align: center;
 	}
@@ -2387,7 +2387,7 @@ left: 5px;
 		.image img {
 			border-radius: 4px;
 			display: inline-flex;
-			width: 100%;
+			width: 80%;
 			position: relative;
 			float: left;
 				text-align: center;
