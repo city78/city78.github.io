@@ -2224,12 +2224,13 @@
 
 /*specialicon*/
 	.specialicon {
-		position: absolute;
+		position: relative;
 top: -18px;
 left: 5px;
 	}
 
 /* extra for img */
+
 
 /* About */
 .people-list {
@@ -2237,6 +2238,7 @@ left: 5px;
 	border: 0;
 	display: inline-block;
 	position: relative;
+	float:left;
 
 }
 .people-list li {
@@ -2249,6 +2251,14 @@ left: 5px;
 	width: auto;
   height: 300px;
   display: inline-block;
+	float:left;
+	@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	 {
+		 people-list{width:100%}
+	 }
+	 ul, p{margin:0; padding:0;}
+		people-list li{width:100%;display:block;float:left;}
+	}
 }
 
 .people-list .people-hover {
@@ -2274,8 +2284,8 @@ left: 5px;
 
 .people-list .people-detail {
   position: absolute;
-  bottom: -12px;
-	left: 70px;
+  bottom: -16px;
+	left: 25px;
   width: 100%;
   text-align: left;
   padding: 20px 20px;
@@ -2329,6 +2339,7 @@ left: 5px;
 	position: relative;
 	text-align: center;
 
+
 }
 .peoples-list li {
 	border-radius: 0px;
@@ -2336,14 +2347,17 @@ left: 5px;
 	display: inline-block;
 	position: relative;
 		text-align: center;
+
 }
 .peoples-list li img {
-	width: 100%;
-  height: 300px;
+	width: auto;
+  height: 200px;
 	align-items: flex-end;
 	align: left;
 		text-align: center;
+
 }
+
 
 .peoples-list .peoples-hover {
 	position: relative;
