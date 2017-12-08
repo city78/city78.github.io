@@ -3639,14 +3639,14 @@ left: 5px;
 			}
 
 		#banner:before {
-			-moz-transition: opacity 3s ease;
-			-webkit-transition: opacity 3s ease;
-			-ms-transition: opacity 3s ease;
-			transition: opacity 3s ease;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
+			-moz-transition: opacity .7s ease;
+			-webkit-transition: opacity .7s ease;
+			-ms-transition: opacity .3s ease;
+			transition: opacity .3s ease;
+			-moz-transition-delay: .2s;
+			-webkit-transition-delay: .2s;
+			-ms-transition-delay: .2s;
+			transition-delay: .2s;
 			content: '';
 			display: block;
 			background-color: #000;
@@ -3859,11 +3859,11 @@ left: 5px;
 			-webkit-transform: scale(1.0);
 			-ms-transform: scale(1.0);
 			transform: scale(1.0);
-			-moz-transition: opacity 1.25s ease, -moz-transform 1s ease;
-			-webkit-transition: opacity 1.25s ease, -webkit-transform 1s ease;
-			-ms-transition: opacity 1.25s ease, -ms-transform 1s ease;
-			transition: opacity 1.25s ease, transform 1s ease;
-			opacity: 0;
+			-moz-transition: opacity .9s ease, -moz-transform 1s ease;
+			-webkit-transition: opacity .9s ease, -webkit-transform 1s ease;
+			-ms-transition: opacity .9s ease, -ms-transform 1s ease;
+			transition: opacity .9s ease, transform 1s ease;
+			opacity: 0.4;
 			position: relative;
 			z-index: 2;
 		}
@@ -3873,14 +3873,14 @@ left: 5px;
 			}
 
 		.post:before {
-			-moz-transition: opacity 3s ease;
-			-webkit-transition: opacity 3s ease;
-			-ms-transition: opacity 3s ease;
-			transition: opacity 3s ease;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
+			-moz-transition: opacity .3s ease;
+			-webkit-transition: opacity .3s ease;
+			-ms-transition: opacity .3s ease;
+			transition: opacity .3s ease;
+			-moz-transition-delay: .2s;
+			-webkit-transition-delay: .2s;
+			-ms-transition-delay: .2s;
+			transition-delay: .2s;
 			content: '';
 			display: block;
 			background-color:;
