@@ -19,6 +19,25 @@
 </head>
 
 <body style="font-family:Montserrat, sans-serif;font-size:14px;font-weight:normal;color:#444;">
+        <style>
+    #overlay {
+        background: #ffffff;
+        color: #666666;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 5000;
+        top: 0;
+        left: 0;
+        float: left;
+        text-align: center;
+        padding-top: 25%;
+    }
+</style>
+<div id="overlay">
+    <img src="assets/img/spinner.gif" alt="Loading" /><br/>
+    Loading...
+</div>
     <section data-aos="fade" data-aos-duration="800" data-aos-delay="50">
         <section data-bs-parallax-bg="true" id="hero_darkened" style="background-position:center;background-size:cover;background-repeat:no-repeat;/*min-height:100vh;*/padding-bottom:5%;width:100%;padding-top:1%;height:500px;color:rgb(255,255,255);">
             <div class="container" style="margin:0px;">
@@ -299,6 +318,14 @@ During his time at the procurement department of Daimler Greater China Ltd, Oliv
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
     <script src="assets/js/script.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script>
+    jQuery(window).load(function(){
+    jQuery('#overlay').fadeOut();
+    });
+</script>
+
 </body>
 
 </html>
