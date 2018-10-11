@@ -8,29 +8,29 @@
 }
 
 #contact_btn {
-  border-radius:14px;
+  border-radius: 14px;
 }
 
 #toggler {
-  color:rgb(255,255,255);
-  border:none;
-  border-width:0px;
+  color: rgb(255,255,255);
+  border: none;
+  border-width: 0px;
 }
 
 #toggler_span {
-  color:rgb(255,255,255);
-  border:none;
-  border-width:0px;
+  color: rgb(255,255,255);
+  border: none;
+  border-width: 0px;
 }
 
 #button_head_pg {
-  border-radius:20px;
-  border-width:3px;
-  border-color:rgb(255,255,255);
+  border-radius: 20px;
+  border-width: 3px;
+  border-color: rgb(255,255,255);
 }
 
 #button_head_pg1 {
-  border-color:rgb(219,138,32);
-  border-radius:20px;
+  border-color: rgb(219,138,32);
+  border-radius: 20px;
 }
 

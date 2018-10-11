@@ -1,0 +1,127 @@
+@media (max-width: 768px) {
+  #nav_wdith {
+    width: initial;
+  }
+}
+
+@media (min-width: 769px) {
+  #nav_wdith {
+    width: 600px;
+  }
+}
+
+@media (max-width: 320px) {
+  #hero {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 300px) {
+  #toggler {
+    visibility: initial;
+  }
+}
+
+@media (min-width: 300px) {
+  #toggler_span {
+    visibility: initial;
+  }
+}
+
+@media (max-width: 768px) {
+  #links_on_top {
+    color: #555;
+  }
+}
+
+@media (min-width: 769px) {
+  #links_on_top {
+    color: #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero_text {
+    margin-top: 5%;
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  #hero_text {
+    margin-top: 280px;
+  }
+}
+
+.navbar-light .navbar-brand {
+  background-image: url("logo30 - Copy.png");
+  background-repeat: no-repeat;
+  width: 120px;
+  background-position: center;
+  background-size: contain;
+  height: 110px;
+  text-transform: uppercase;
+}
+
+.navbar.navbar-light.navbar-expand-md {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  height: 80px;
+  background-color: rgba(0,0,0,0);
+  color: rgb(255,255,255);
+}
+
+#toggler {
+  color: rgb(255,255,255);
+  border: none;
+  border-width: 0px;
+}
+
+#toggler_span {
+  color: rgb(255,255,255);
+  border: none;
+  border-width: 0px;
+}
+
+#button_head_pg {
+  border-radius: 20px;
+  border-width: 3px;
+  border-color: rgb(255,255,255);
+}
+
+#button_head_pg1 {
+  border-color: rgb(219,138,32);
+  border-radius: 20px;
+}
+
+@media (max-width: 321px) {
+  #heading_title_text {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 322px) {
+  #heading_title_text {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #side_column {
+    visibility: hidden;
+    height: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  #side_column {
+    height: 100%;
+  }
+}
+
+.middle_product {
+  background-color: #3e5493;
+  background-image: url("../../assets/img/batthern.png");
+}
+
