@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/Pricing-Tables-1.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/noteverythingcount.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
@@ -35,6 +36,7 @@
     <link rel="stylesheet" href="assets/css/Team-Grid.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
 <link rel="icon" href="assets/img/icon.png" />
+    <link rel="stylesheet" href="assets/css/rangeslider.css">
 <meta name="City78" content="Designing sustainable urban communities">
 <meta name="keywords" content="City78,city78,urban planning,city 78,City 78,city seventy-eight,seventy eight">      <style type="text/css">
 
@@ -170,8 +172,8 @@
             </div>
             <div class="row" style="margin-top: 20px;">
                 <div class="col-lg-10 offset-lg-1">
-                    <p class="text-center" data-aos="fade" data-aos-duration="700" data-aos-delay="400" style="color: #666;padding: -15px;padding-top: 8px;font-weight: normal;font-size: 22px;margin: -15;">At the core of our services is our 20|20 Vision Report, a set of interactive maps telling the story of the city, layered with rich demographic and city data for you to explore.&nbsp;<br><br>It's the best survey your organization
-                        never knew it had.</p>
+                    <p class="text-center" data-aos="fade" data-aos-duration="700" data-aos-delay="400" style="color: #666;padding: -15px;padding-top: 8px;font-weight: normal;font-size: 22px;margin: -15;">At the core of our services is our 20|20 Vision Report, a set of interactive maps telling the story of the city, layered with rich demographic and city data for you to explore.&nbsp;<br><br>It's the best survey your organization never
+                        knew it had.</p>
                 </div>
             </div>
         </div>
@@ -195,8 +197,215 @@
                             <div class="col-lg-7 col-xl-7 my-auto order-lg-1 showcase-text" style="padding: 112px 50px;">
                                 <h2 style="color: rgb(255,255,255);">20|20 VISION REPORT</h2>
                                 <p class="lead mb-0" style="color: rgb(255,255,255);">The best survey your organization never knew it had.&nbsp;<br><br>Map community perception of topics like walkability, safety, parking, handicap accessibility, public transportation, atmosphere, repeat visits, or historic
-                                    and scenic areas across entire cities. Engage in demographic trends through leading edge demographic data analyzed at micro and macro scales.&nbsp;<br></p>
+                                    and scenic areas across entire cities. Engage in demographic trends through leading edge demographic data analyzed at micro and macro scales.&nbsp;<br></p><button class="btn btn-primary" type="button" style="margin-top: 15px;" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapseExample">Learn more</button></div>
+                        </div>
+                        <div class="row no-gutters middle_product collapse" id="collapse20">
+                            <div class="col-lg-5 col-xl-5 text-white showcase-img jarallax" style="color: rgb(255,255,255);padding: 40px;">
+                                <h2 style="color: rgb(255,255,255);">VARIABLES</h2>
+                                <p class="lead mb-0" style="color: rgb(255,255,255);font-size: 17px;"><strong>○ Annual revenue data of businesses&nbsp;</strong>&nbsp;<br>○&nbsp;<strong>Community perception variables:</strong><br>&nbsp; &nbsp; ○ Walkability<br>&nbsp; &nbsp; ○ Public transportation<br>&nbsp; &nbsp; ○ Repeat
+                                    customers<br>&nbsp; &nbsp; ○ General atmosphere<br>&nbsp; &nbsp; ○ Historic sentiment<br>&nbsp; &nbsp; ○ Scenic sentiment<br>&nbsp; &nbsp; ○ Parking<br><strong>○ Demographics overview</strong><br><strong>○ Hours of operation</strong><br><strong>○ Languages registered&nbsp;</strong><br><strong>○ Rate of registered reviews</strong><br></p>
                             </div>
+                            <div class="col-lg-7 col-xl-7 text-white showcase-img jarallax" style="color: rgb(255,255,255);padding: 40px;">
+                                <h2 style="color: rgb(255,255,255);">PRICING</h2>
+                                <p>Pricing accounts for the average price per square mile of data, based on density and the amount of data needed to be collected, as well as analysis and other time considerations.</p><div class="row">
+
+    <div class="column" style="padding:8px 20px">
+<!-- final version -->
+<div>
+    <p style="font-size:20px; margin-top:15px;">Density</p>
+</div>
+
+<!-- radio select-->
+<form>
+  <input class="btn btn-primary active" id="349" type="radio" value="1" name="question1" 
+         oninput="Total(inputcm.value);" 
+         onchange="Total(inputcm.value);" >
+    
+  <label for="349">Low to Medium Density</label>
+  <br>
+  <input class="btn btn-primary active" id="350" type="radio" value="2" name="question1" 
+         oninput="Total(inputcm.value);" 
+         onchange="Total(inputcm.value);" >
+
+  <label for="350">Medium-High to High Density</label>
+  <br>
+</form>
+
+    </div>
+    <div class="column" style="padding:8px 20px;">
+
+<div>
+    <p style="font-size:20px; margin-top:20px;">Standard/Custom Topics</p>
+</div>
+<form>
+  <input class="btn btn-primary active" id="355" type="radio" value="20" name="question1"
+         oninput="Total(inputcm.value);" 
+         onchange="Total(inputcm.value);" >
+  <label for="355">Standard Report Topics</label>
+  <br>
+  <input class="btn btn-primary active" id="356" type="radio" value="30" name="question1" 
+         oninput="Total(inputcm.value);" 
+         onchange="Total(inputcm.value);" >
+  <label for="356">Standard + Custom Report Topics</label>
+  <br>
+</form>
+
+</div>
+</div>
+
+<div class="row">
+    <div class="column" style="padding:8px 20px;">
+     <div>
+    <p style="font-size:20px; margin-top:20px;">One-time or Quarterly Report</p>
+</div>
+<form>
+  <input class="btn btn-primary active" id="370" type="radio" value="1" name="question1"
+         oninput="Total(inputcm.value);" 
+         onchange="Total(inputcm.value);" >
+  <label for="370">One-time</label>
+  <br>
+  <input class="btn btn-primary active" id="371" type="radio" value="0.88" name="question1" 
+         oninput="Total(inputcm.value);" 
+         onchange="Total(inputcm.value);" >
+  <label for="371">Quarterly</label>
+  <br>
+</form>
+</div>
+</div>
+
+<div>
+    <p style="font-size:20px; margin-top:15px;">Square Miles</p>
+</div>
+<!--slider and total function-->
+<form onSubmit="return false;">
+<div class="range-slider" style="margin-top:0px;">
+  <input id="inputcm" 
+         class="range-slider__range" 
+         type="range" value="25" min="1" max="900" 
+         oninput="Total(this.value);inputcm_num.value=inputcm.value;density_radio.value;inputcm_rightnum.value=inputcm.value;" 
+         onchange="Total(this.value);inputcm_num.value=inputcm.value;density_radio.value;inputcm_rightnum.value=inputcm.value;" >
+  <span class="range-slider__value" id="inputcm_rightnum">0</span>
+    
+    <input class="form-control form-control-sm" style="width:80px;margin-top:5px;" id="inputcm_num" type="number" required data-="This field is required" 
+           name="fname" value="25" min="1" max="900" 
+           oninput="inputcm.value=inputcm_num.value;Total(this.value);density_radio.value;inputcm_rightnum.value=inputcm_num.value;" 
+           onchange="inputcm.value=inputcm_num.value;Total(this.value);density_radio.value;inputcm_rightnum.value=inputcm_num.value;"><br>
+</div>
+</form>
+
+<!--
+<input type="button" id="button_total" class="btn btn-success" style="margin-top: 15px" value="Calculate" onclick="Total(inputcm.value)">
+-->
+
+
+<p style="font-size:25px; margin-top:20px;">
+    Price per report: $<span id="Total_val"></span></p>
+
+<!--
+<p style="font-size:25px; margin-top:20px;">
+    Total Price: $<span id="Total_density"></span></p>
+-->
+
+<script>
+function Total(valTot) {
+    var consulting;
+    var api_per;
+    
+    //this is whether it is low or high density
+    if( document.getElementById("350").checked == true ){
+        var density_calc=document.getElementById("350").value;
+    }
+    else{
+        var density_calc=document.getElementById("349").value;
+    }
+    
+    
+    
+    //determine api price based on miles and density
+    if (valTot < 15 && density_calc == "1") {
+        api_per = 1.54;
+    } else if (valTot >= 15 && valTot <= 26 && density_calc == "1") {
+        api_per = 1.54;
+    } else if (valTot > 26 && valTot <= 60 && density_calc == "1") {
+        api_per = 1.54;
+    } else if (valTot > 60 && valTot <= 140 && density_calc == "1") {
+        api_per = 1.54;
+    } else if (valTot > 140 && valTot <= 500 && density_calc == "1") {
+        api_per = 1.54;
+    } else if (valTot > 500 && valTot <= 900 && density_calc == "1") {
+        api_per = 1.0;
+    } else if (valTot < 8 && density_calc == "2") {
+        api_per = 6.02;
+    } else if (valTot >= 8 && valTot <= 15 && density_calc == "2") {
+        api_per = 6.02;
+    } else if (valTot > 15 && valTot <= 70 && density_calc == "2") {
+        api_per = 6.02;
+    } else if (valTot > 70 && valTot <= 350 && density_calc == "2") {
+        api_per = 5.46;
+    } else if (valTot > 350 && valTot <= 500 && density_calc == "2") {
+        api_per = 5.04;
+    } else if (valTot > 500 && valTot <= 900 && density_calc == "2") {
+        api_per = 4.4;
+    }
+    
+    
+    
+    
+    //this is the standard vs custom reports
+    if( document.getElementById("356").checked == true ){
+        var freq_calc=document.getElementById("356").value;
+    }
+    else{
+        var freq_calc=document.getElementById("355").value;
+    }
+    
+    //this is one time vs repeat
+    if( document.getElementById("370").checked == true ){
+        var one_quarterly=document.getElementById("370").value;
+    }
+    else{
+        var one_quarterly=document.getElementById("371").value;
+    }
+    
+    //consulting cost
+    if (valTot < 15 && density_calc == 1) {
+        consulting = 2485;
+    } else if (valTot >= 15 && valTot <= 26 && density_calc == 1) {
+        consulting = 3920;
+    } else if (valTot > 26 && valTot <= 60 && density_calc == 1) {
+        consulting = 4200;
+    } else if (valTot > 60 && valTot <= 140 && density_calc == 1) {
+        consulting = 4600;
+    } else if (valTot > 140 && valTot <= 500 && density_calc == 1) {
+        consulting = 5965;
+    } else if (valTot > 500 && valTot <= 900 && density_calc == 1) {
+        consulting = 6955;
+    } else if (valTot < 8 && density_calc == 2) {
+        consulting = 5035;
+    } else if (valTot >= 8 && valTot <= 15 && density_calc == 2) {
+        consulting = 6160;
+    } else if (valTot > 15 && valTot <= 70 && density_calc ==2) {
+        consulting = 7085;
+    } else if (valTot > 70 && valTot <= 350 && density_calc == 2) {
+        consulting = 8830;
+    } else if (valTot > 350 && valTot <= 500 && density_calc == 2) {
+        consulting = 10100;
+    } else if (valTot > 500 && valTot <= 900 && density_calc == 2) {
+        consulting = 12100;
+    }
+    
+  var totaling_equ = (((valTot * api_per) * freq_calc) + consulting) * one_quarterly;  
+  var n = totaling_equ.toFixed(0);
+    
+    
+  document.getElementById("Total_val").innerHTML= n;
+  document.getElementById("Total_density").innerHTML=freq_calc;
+}
+</script>
+
+
+
+</div>
                         </div>
                         <div class="row no-gutters middle_product" id="real_estate" style="/*background-color: #3e5493;*//*background-image: url(&quot;assets/img/batthern.png&quot;);*/">
                             <div class="col-lg-5 col-xl-5 order-lg-2 text-white showcase-img jarallax" style="background-image: url(&quot;assets/img/survey.png&quot;);"><span></span></div>
@@ -210,8 +419,8 @@
                             <div class="col-lg-5 col-xl-5 text-white showcase-img jarallax" style="background-image: url(&quot;assets/img/montline.png&quot;);color: rgb(255,255,255);"><span></span></div>
                             <div class="col-lg-7 col-xl-7 my-auto order-lg-1 showcase-text" style="padding: 112px 50px;padding-bottom: 50px;">
                                 <h2 style="color: rgb(255,255,255);">CITIES AT GROUND LEVEL</h2>
-                                <p class="lead mb-0" style="color: rgb(255,255,255);">Understand your city by sector or on a block by block level.<br><br>Track the narratives the public holds on specific industries across the entire city through time or assess the effect your development has had on the place
-                                    identity of its surroundings.</p>
+                                <p class="lead mb-0" style="color: rgb(255,255,255);">Understand your city by sector or on a block by block level.<br><br>Track the narratives the public holds on specific industries, annual revenue or revenue broken down by demographics, opening hours, and more across the
+                                    entire city or even assess the effect your development has had on the place identity of its surroundings.</p>
                             </div>
                         </div>
                         <div class="row no-gutters middle_product" id="revvit">
@@ -294,6 +503,7 @@
     <script src="assets/js/scrollsmooth.js"></script>
     <script src="assets/js/user.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="assets/js/rangeslider.js"></script>
 </body>
 
 </html>
