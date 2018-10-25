@@ -182,7 +182,7 @@
             </div>
             <div class="row" style="margin-top: 20px;">
                 <div class="col-lg-10 offset-lg-1">
-                    <p class="text-center" data-aos="fade" data-aos-duration="700" data-aos-delay="0" style="color: #666;padding: -15px;padding-top: 8px;font-weight: normal;font-size: 22px;margin: -15;font-family: Montserrat;">At the core of our methodology and services is our EDGE Analysis Tool, which enables us to tap into the pulse of a city and directly listen to its residents and all users of the urban environment. <br><br>EDGE serves as the foundation for our 20|20 Vision Report, a set of interactive maps and dashboards telling the story of the city, layered with rich demographic and city data for you to explore. In other words, it's the best survey your organization never knew it had.</p>
+                    <p class="text-center" data-aos="fade" data-aos-duration="700" data-aos-delay="0" style="color: #666;padding: -15px;padding-top: 8px;font-weight: normal;font-size: 22px;margin: -15;font-family: Montserrat;">At the core of our methodology and services is our EDGE Analysis Tool, which enables us to tap into the pulse of a city and directly listen to its residents and all users of the urban environment. <br><br>EDGE serves as the foundation for our EDGE Urban Performance Report, a set of interactive maps and dashboards telling the story of the city, layered with rich demographic and city data for you to explore. In other words, it's the best survey your organization never knew it had.</p>
                 </div>
             </div>
         </div>
@@ -191,7 +191,7 @@
         <div class="row" style="margin: 0px;background-image: url(&quot;assets/img/batthern.png&quot;);">
             <div class="col-sm-8 col-md-2 col-xl-2 sticky-top" id="side_column" style="padding-left: 25px;">
                 <ul class="nav nav-tabs" style="margin-top: 20px;height: 80vh;">
-                    <li class="nav-item" style="width: 100%;"><a class="nav-link" href="#20_20"><h4 style = "color: #555;font-family: Montserrat;font-size: 1rem;">20|20 VISION REPORT</h4></a></li>
+                    <li class="nav-item" style="width: 100%;"><a class="nav-link" href="#20_20"><h4 style = "color: #555;font-family: Montserrat;font-size: 1rem;">EDGE URBAN PERFORMANCE REPORT</h4></a></li>
                     <li class="nav-item"><a class="nav-link" href="#real_estate"><h4 style = "color: #555;font-family: Montserrat;font-size: 1rem;">REAL ESTATE HOTSPOT MONITORING</h4></a></li>
                     <li class="nav-item"><a class="nav-link" href="#ground_level"><h4 style = "color: #555;font-family: Montserrat;font-size: 1rem;">CITIES AT GROUND LEVEL</h4></a></li>
                     <li class="nav-item" style="width: 100%;"><a class="nav-link" href="#revvit"><h4 style = "color: #555;font-family: Montserrat;font-size: 1rem;">REVVIT<h4></a></li>
@@ -204,7 +204,7 @@
                         <div class="row no-gutters middle_product" id="20_20">
                             <div class="col-lg-5 col-xl-5 text-white showcase-img jarallax" style="background-image: url(&quot;assets/img/scene.png&quot;);color: rgb(255,255,255);"><span></span></div>
                             <div class="col-lg-7 col-xl-7 my-auto order-lg-1 showcase-text" style="padding: 112px 50px;">
-                                <h2 style="color: rgb(255,255,255);font-family: Montserrat;">20|20 VISION REPORT</h2>
+                                <h2 style="color: rgb(255,255,255);font-family: Montserrat;">EDGE URBAN PERFORMANCE REPORT</h2>
                                 <p class="lead mb-0" style="color: rgb(255,255,255);">The most detailed urban performance survey available. &nbsp;<br><br>Map community perception of topics like walkability, revenue generation, safety, nationality of visitors, parking, handicap accessibility, public transportation, atmosphere, repeat visits, or historic and scenic areas and other aspects of the pedestrian experience across entire cities. Engage in demographic trends through leading edge demographic data analyzed at micro and macro scales.&nbsp;<br></p><button class="btn btn-primary" type="button" style="margin-top: 15px;" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapseExample">Variables and Pricing</button></div>
                         </div>
                         <div class="row no-gutters middle_product collapse" id="collapse20">
@@ -290,12 +290,12 @@
   <input id="inputcm" 
          class="range-slider__range" 
          type="range" value="25" min="1" max="900" 
-         oninput="Total(this.value);inputcm_num.value=inputcm.value;density_radio.value;inputcm_rightnum.value=inputcm.value;" 
+         oninput="inputcm_num.value=inputcm.value;Total(this.value);density_radio.value;inputcm_rightnum.value=inputcm.value;" 
          onchange="Total(this.value);inputcm_num.value=inputcm.value;density_radio.value;inputcm_rightnum.value=inputcm.value;" >
-  <span class="range-slider__value" id="inputcm_rightnum">0</span>
+
     
     <input class="form-control form-control-sm" style="width:80px;margin-top:5px;" id="inputcm_num" type="number" required data-="This field is required" 
-           name="fname" value="25" min="1" max="900" 
+           name="inputcm_num" value="25" min="1" max="900" 
            oninput="inputcm.value=inputcm_num.value;Total(this.value);density_radio.value;inputcm_rightnum.value=inputcm_num.value;" 
            onchange="inputcm.value=inputcm_num.value;Total(this.value);density_radio.value;inputcm_rightnum.value=inputcm_num.value;"><br>
 </div>
@@ -387,8 +387,27 @@ function Total(valTot) {
     }
     
   var totaling_equ = (((valTot * api_per) * freq_calc) + consulting) * one_quarterly;  
-  var n = totaling_equ.toFixed(0);
-    
+  var n;
+
+if (totaling_equ < 5000) {
+    n = 5000;
+} else {
+    n = totaling_equ.toFixed(0);
+}
+
+function addCommas(nStr) {
+nStr += '';
+var x = nStr.split('.');
+var x1 = x[0];
+var x2 = x.length > 1 ? '.' + x[1] : '';
+var rgx = /(\d+)(\d{3})/;
+while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+}
+return x1 + x2;
+}
+
+n = addCommas(n)
     
   document.getElementById("Total_val").innerHTML= n;
   document.getElementById("Total_density").innerHTML=freq_calc;
@@ -566,7 +585,7 @@ function Total(valTot) {
                             </div>
                             <div class="col-lg-7 col-xl-7 text-white showcase-img jarallax" style="color: rgb(255,255,255);padding: 40px;">
                                 <h2 style="color: rgb(255,255,255);">PRICING</h2>
-                                <p>Pricing accounts for the average price per square mile of data, the amount of data needed to be collected, as well as analysis and other time considerations. Please reach out for a custom quote if the study area is 900+ square miles.</p><div class="row">
+                                <p>Pricing accounts for the average price per square mile of data, the amount of data needed to be collected, as well as analysis and other time considerations. Please reach out for a custom quote if the study area is 500+ square miles.</p><div class="row">
 
     <div class="column" style="padding:8px 20px">
 <!-- final version -->
@@ -656,11 +675,11 @@ function Total(valTot) {
          type="range" value="25" min="1" max="900" 
          oninput="fTotal(this.value);finputcm_num.value=finputcm.value;fdensity_radio.value;finputcm_rightnum.value=finputcm.value;" 
          onchange="fTotal(this.value);finputcm_num.value=finputcm.value;fdensity_radio.value;finputcm_rightnum.value=finputcm.value;" >
-  <span class="range-slider__value" id="finputcm_rightnum">0</span>
+
     
     <input class="form-control form-control-sm" style="width:80px;margin-top:5px;" id="finputcm_num" type="number" required data-="This field is required" 
-           name="fname" value="25" min="1" max="900" 
-           oninput="finputcm.value=finputcm_num.value;fTotal(this.value);fdensity_radio.value;finputcm_rightnum.value=finputcm_num.value;" 
+           name="finputcm_num" value="25" min="1" max="900" 
+           oninput="finputcm_rightnum.value=finputcm_num.value;finputcm.value=finputcm_num.value;fTotal(this.value);fdensity_radio.value;" 
            onchange="finputcm.value=finputcm_num.value;fTotal(this.value);fdensity_radio.value;finputcm_rightnum.value=finputcm_num.value;"><br>
 </div>
 </form>
@@ -710,43 +729,60 @@ function fTotal(fvalTot) {
     if (fvalTot < 20 && sel_one == 1) {
         fapi_per = 5;
     } else if (fvalTot >= 20 && sel_one == 1) {
-        fapi_per = (5 / Math.log(fvalTot)) + 1.2;
+        fapi_per = (5 / Math.log(fvalTot)) + 2.2;
     } else if (fvalTot < 20 && sel_one == 2) {
-        fapi_per = 5;
+        fapi_per = 10;
     } else if (fvalTot >= 20 && sel_one == 2) {
-        fapi_per = (5 / Math.log(fvalTot)) + 1.2;
+        fapi_per = (10 / Math.log(fvalTot)) + 5;
     } else if (sel_one == 3) {
     	fapi_per = 1;
     } else if (fvalTot < 20 && sel_one == 4) {
-    	fapi_per = 5;
+    	fapi_per = 10;
     } else if (fvalTot >= 20 && sel_one == 4) {
-    	fapi_per = (5 / Math.log(fvalTot)) + 1.2;
+    	fapi_per = (10 / Math.log(fvalTot)) + 8.2;
     }
     
     //ffreq_calc
     if (sel_one == 1) {
     	ffreq_calc = 10;
     } else if (sel_one == 2) {
-    	ffreq_calc = 1;
+    	ffreq_calc = 3;
     } else if (sel_one == 3) {
-    	ffreq_calc = 1;
+    	ffreq_calc = 20;
     } else if (sel_one == 4) {
-    	ffreq_calc = 1.5;
+    	ffreq_calc = 8;
     }
     
     //consulting cost
     if (sel_one == 1) {
-    	fconsulting = 1870;
+    	fconsulting = 5000;
     } else if (sel_one == 2) {
-    	fconsulting = 2520;
+    	fconsulting = 4000;
     } else if (sel_one == 3) {
     	fconsulting = 3080;
     } else if (sel_one == 4) {
-    	fconsulting = 3120;
+    	fconsulting = 2490;
     }
     
-  var ftotaling_equ = (((fvalTot * fapi_per) * ffreq_calc) + fconsulting) * fone_quarterly;  
-  var fn1 = ftotaling_equ.toFixed(0);
+  var ftotaling_equ;
+
+    if (sel_one == 1) {
+        ftotaling_equ = (((fvalTot * fapi_per) * ffreq_calc) + fconsulting) * fone_quarterly;
+    } else if (sel_one == 2) {
+        ftotaling_equ = (((fvalTot * fapi_per) * ffreq_calc) + fconsulting) * fone_quarterly;
+    } else if (sel_one == 3) {
+        ftotaling_equ = (((fvalTot * fapi_per) * (ffreq_calc * 4) ) + fconsulting) * fone_quarterly;
+    } else if (sel_one == 4) {
+        ftotaling_equ = (((fvalTot * fapi_per) * ffreq_calc) + fconsulting) * fone_quarterly;
+    }
+    
+  var fn1;
+
+  if (ftotaling_equ < 2500) {
+    fn1 = 2500;
+  } else {
+    fn1 = ftotaling_equ.toFixed(0);
+}
 
   function addCommas(nStr) {
     nStr += '';
