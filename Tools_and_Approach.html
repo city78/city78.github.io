@@ -738,7 +738,7 @@ function fTotal(fvalTot) {
 
     //determine api price based on miles and density
     if (fvalTot < 20 && sel_one == 1) {
-        fapi_per = 5;
+        fapi_per = 6;
     } else if (fvalTot >= 20 && sel_one == 1) {
         fapi_per = (5 / Math.log(fvalTot)) + 2.2;
     } else if (fvalTot < 20 && sel_one == 2) {
@@ -757,7 +757,7 @@ function fTotal(fvalTot) {
     if (sel_one == 1) {
     	ffreq_calc = 10;
     } else if (sel_one == 2) {
-    	ffreq_calc = 3;
+    	ffreq_calc = 10;
     } else if (sel_one == 3) {
     	ffreq_calc = 20;
     } else if (sel_one == 4) {
