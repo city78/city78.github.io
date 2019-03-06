@@ -109,7 +109,7 @@ button:focus {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 340px;
-    background-image: url('../art12.png');
+    background-image: url('img/art12.png');
     background-size: cover;
 }
 
