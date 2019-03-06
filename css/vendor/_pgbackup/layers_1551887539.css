@@ -14,8 +14,11 @@ website:   	http://www.themepunch.com
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-top-color: #1398cd;
+    border-top-color: #0a6d85;
     text-align: center;
+    font-family: Roboto;
+    padding-top: 0px;
+    data-aos: "fade-in";
 }
 
 .tp-caption.Twitter-Content a,
