@@ -1,0 +1,335 @@
+padding-left: 88px;
+padding-right: 20px;
+margin-left: 0px;
+
+.scroll-downs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 34px;
+    height: 55px;
+}
+
+/* Overlay style */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    overflow: hidden;
+    border: none;
+    text-indent: 200%;
+    color: transparent;
+    outline: none;
+    z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    height: 60%;
+    font-size: 54px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.overlay ul li {
+    display: block;
+    height: 20%;
+    height: calc(100% / 5);
+    min-height: 54px;
+}
+
+.overlay ul li a {
+    font-weight: 300;
+    display: block;
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+/* Effects */
+.overlay-hugeinc {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+    opacity: 0.4;
+    -webkit-transform: translateY(-25%) rotateX(35deg);
+    transform: translateY(-25%) rotateX(35deg);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+    -webkit-transform: translateY(25%) rotateX(-35deg);
+    transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+    .overlay nav {
+        height: 70%;
+        font-size: 34px;
+    }
+
+    .overlay ul li {
+        min-height: 34px;
+    }
+}
+
+.scroll-downs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 34px;
+    height: 55px;
+}
+
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+mousemove {
+}
+
+hero-image-pastpres {
+}
+
+.img_pastpres {
+    background-image: url('file:///C:/Users/Public/Documents/City78dev/website%20old%20versions/apinegrowv1/Screenshot_9.png');
+
+    /* Set a specific height */
+    height: 180px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    max-width: 70%;
+    margin-left: 15%;
+}
+
+.text_for_client_icon {
+    font-family: Poppins;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* .special_container {
+    width: 90vw;
+    position: relative;
+    left: 55%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+} */
+.hundredtopicstext {
+    padding: 0px 30px;
+}
+
+.casestudybox {
+}
+
+.casestudyimg {
+    max-width: 80%;
+    margin-left: 10%;
+    max-height: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.aboutsectionhead {
+    height: 80vh;
+    min-height: 80vh;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutcasestudy {
+    padding-top: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-image: url('../trianglify.svg');*/
+    background-color: #ffffff;
+}
+
+.threecoltitle {
+    font-size: 28px;
+}
+
+.jumbofont {
+    font-family: Poppins;
+    font-size: 15px;
+}
+
+.testingjumbo {
+    font-family: Poppins;
+    font-size: 50px;
+    color: #ffffff;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+.portfolioinfo {
+    padding: 0px;
+    margin: 0px;
+}
+
+.headerlogo {
+    margin-top: -3%;
+}
+
+.rowfirstpage {
+    padding-top: 1px;
+    top: 200px;
+}
+
+@media (min-width:992px) {
+    .pushdowncol {
+        top: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .humanexperiencequote {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:992px) {
+    .humanexperiencequant {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .humanexperiencequant {
+        min-height: 80px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 411px {
+    .heromediaquery {
+        padding-top: 500px;
+        margin-top: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .rowpushupanddown {
+        margin-top: 60px;
+    }
+}
+
+.img-content {
+}
+
+.footercontact {
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+
+.footermenus {
+    color: #ffffff;
+}
+
+.footeraddress {
+    padding-top: 15px;
+}
+
+.footer-media-link {
+    padding-top: 33px;
+}
