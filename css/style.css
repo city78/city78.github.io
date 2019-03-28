@@ -8676,7 +8676,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-    margin-bottom: 3rem !important;
+    margin-bottom: 3rem;
 }
 
 .ml-5,
@@ -10837,7 +10837,7 @@ h5,
 
 @media (max-width: 570.98px) {
     .hero-wrap .slider-text h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
@@ -12681,5 +12681,17 @@ textarea.form-control {
 @media (min-width:575px) {
     .quote_size {
         font-size: 20px;
+    }
+}
+
+@media (max-width:575px) {
+    .subtext_header {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:575px) {
+    .subtext_header {
+        font-size: 24px;
     }
 }
