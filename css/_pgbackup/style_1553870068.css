@@ -10474,8 +10474,7 @@ h5,
     left: 0;
     right: 0;
     z-index: 3;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 0;
 }
 
 @media (max-width: 991.98px) {
@@ -12705,7 +12704,7 @@ textarea.form-control {
 
 @media (min-width:575px) {
     .img_goesup {
-        margin-bottom: -8px;
+        margin-bottom: -13px;
     }
 }
 
@@ -12747,29 +12746,4 @@ textarea.form-control {
     letter-spacing: -0.6px;
     line-height: 23px;
     text-align: left;
-}
-
-@media (max-width:575px) {
-    .triangle-down {
-        min-height: 200px;
-    }
-}
-
-@media (min-width:575px) {
-    .triangle-down {
-        min-height: 400px;
-    }
-}
-
-@media (max-width:575px) {
-    .layers_min_height {
-        min-height: 300px;
-        background-position: 'Center center';
-    }
-}
-
-@media (min-width:575px) {
-    .layers_min_height {
-        min-height: 600px;
-    }
 }

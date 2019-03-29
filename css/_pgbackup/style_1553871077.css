@@ -12751,25 +12751,6 @@ textarea.form-control {
 
 @media (max-width:575px) {
     .triangle-down {
-        min-height: 200px;
-    }
-}
-
-@media (min-width:575px) {
-    .triangle-down {
-        min-height: 400px;
-    }
-}
-
-@media (max-width:575px) {
-    .layers_min_height {
-        min-height: 300px;
-        background-position: 'Center center';
-    }
-}
-
-@media (min-width:575px) {
-    .layers_min_height {
-        min-height: 600px;
+        min-height: 0px;
     }
 }
