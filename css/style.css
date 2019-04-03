@@ -10838,13 +10838,13 @@ h5,
 
 @media (max-width: 570.98px) {
     .hero-wrap .slider-text h1 {
-        font-size: 35px;
+        font-size: 50px;
     }
 }
 
 @media (min-width: 570.98px) {
     .hero-wrap .slider-text h1 {
-        font-size: 60px;
+        font-size: 80px;
     }
 }
 
