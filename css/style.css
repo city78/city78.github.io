@@ -12773,3 +12773,21 @@ textarea.form-control {
         min-height: 600px;
     }
 }
+
+.guide-text {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: left;
+}
+
+.guide-text-sub {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 16px;
+    text-align: left;
+}
+
+.guide-text-box {
+    padding-bottom: 6%;
+}
