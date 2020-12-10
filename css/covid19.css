@@ -1,0 +1,18 @@
+/* Begin COVID19 Styles */
+
+.col-md-8 {
+    /* margin: auto; */
+    margin-top: 100px;
+    text-align: center;
+    flex: unset;
+    max-width: unset;
+}
+
+.hero-wrap .slider-text h1 {
+    font-size: 5em;
+    font-weight: 400;
+    color: red;
+    text-transform: uppercase;
+}
+
+/* End COVI19 Styles */
