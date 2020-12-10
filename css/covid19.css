@@ -1,7 +1,6 @@
 /* Begin COVID19 Styles */
 
 .col-md-8 {
-    /* margin: auto; */
     margin-top: 100px;
     text-align: center;
     flex: unset;
@@ -13,6 +12,16 @@
     font-weight: 400;
     color: red;
     text-transform: uppercase;
+}
+
+.imageofclients {
+    display: block; 
+    margin: 2rem auto;
+    text-align: center;
+}
+
+section:not(:first-of-type) {
+    margin: 3rem auto;
 }
 
 /* End COVI19 Styles */
