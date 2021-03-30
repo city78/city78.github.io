@@ -10478,6 +10478,16 @@ h5,
     padding-bottom: 6px;
 }
 
+.covid-header {
+    height:1.75em;
+    width:100%;
+    text-align:center;
+    margin:0;
+    background-color:#e78725;
+    color:#333;
+    display:block;
+}
+
 @media (max-width: 991.98px) {
     .ftco-navbar-light {
         background: rgb(29,53,82) !important;
