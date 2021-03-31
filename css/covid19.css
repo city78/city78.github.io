@@ -8,10 +8,19 @@
 }
 
 .hero-wrap .slider-text h1 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 400;
-    color: red;
+    color: white;
     text-transform: uppercase;
+}
+
+h1.era-title {
+    line-height: 1em;
+}
+
+h1.era-title::first-letter {
+    color: #e78725;
+    font-size: 1.2em;
 }
 
 .imageofclients {
