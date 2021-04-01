@@ -10891,8 +10891,8 @@ h5,
     }
 }
 
-.hero-wrap .slider-text .btn-primary {
-}
+/* .hero-wrap .slider-text .btn-primary {
+} */
 
 .hero-wrap .slider-text .btn-primary:hover,
 .hero-wrap .slider-text .btn-primary:focus {
@@ -11750,6 +11750,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
     opacity: 0;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -12727,10 +12728,10 @@ textarea.form-control {
     }
 }
 
-@media (max-width:576px) {
+/* @media (max-width:576px) {
     .move_changing_text {
     }
-}
+} */
 
 @media (max-width:361px) {
     .typewrite_360max {

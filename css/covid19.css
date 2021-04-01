@@ -26,7 +26,7 @@ h1.era-title::first-letter {
 
 a.btn.btn-primary1.p-3.px-4 {
     width:min-content;
-    min-width;400px;
+    min-width:400px;
     background-color: #ff952b;
     border-radius: 10px;
     float: none;
