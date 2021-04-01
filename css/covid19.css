@@ -25,23 +25,24 @@ h1.era-title::first-letter {
 }
 
 a.btn.btn-primary1.p-3.px-4 {
-    width:min-content;
-    min-width:400px;
+    width:400px;
+    min-width:min-content;
+    max-width: 80vw;
     background-color: #ff952b;
     border-radius: 10px;
     float: none;
     border-color: #ff952b;
     color: #fff;
-    font-family: Roboto;
-    font-weight: 100;
+    /* font-family: Roboto; */
+    font-weight: 400;
     margin: 40px auto;
     font-size: 1.25em;
     transition: all 1.5s;
 }
 
-a.btn.btn-primary1.p-3.px-4:hover {
+a.btn.btn-primary1.p-3.px-4:h4 {
     color: #fff;
-    transform: scale(1.07);
+    transform: scale(1.02);
     transition: all 1s;
 }
 
@@ -51,32 +52,9 @@ a.btn.btn-primary1.p-3.px-4:hover {
     text-align: center;
 }
 
-div.col-md-4 img, div.col-md-6 img {
-    filter: opacity(.9);
-    transform: none;
-    transition: all 1.5s;
-}
-div.col-md-4:hover img, div.col-md-6:hover img {
-    filter: opacity(1);
-    transform: scale(1.02);
-    transition: all 1s;
-}
-
-div.col-md-6 p.mb-4.title-text {
-    transition: all 1.5s;
-    text-align: center;
-    color:#666666;
-    font-size: 1.5rem;
-    height: 3.5rem;
-}
-
-div.col-md-6:hover p.mb-4.title-text {
-    color: #222;
-    transition: all 1.5s;
-}
 
 section:not(:first-of-type) {
-    padding: 4rem;
+    padding: 4rem 0;
 }
 section.dark-bg {
     background-image: linear-gradient(#477695, #1c2f3b); 
@@ -119,22 +97,83 @@ p.mb-4.title-text {
 }
 
 section.dark-bg div.col-md-4 p.body-text.ftco-animate {
-    color: rgba(204, 204, 204, 0.75);
-    transition: all 1.5s;
-}
-section.dark-bg div.col-md-4:hover p.body-text.ftco-animate {
     color: #fff;
     transition: all 1s;
 }
 
 div.col-md-4 p.mb-4.title-text {
-    color: #ff952b93;
+    color: #ff952b;
+    opacity: 1;
+    transition: all 1s;
+}
+
+div.col-md-4 img, div.col-md-6 img {
+    filter: opacity(1);
+    transform: scale(1);
+    transition: all 1s;
+}
+
+div.col-md-6 p.mb-4.title-text {
+    color: #222;
     transition: all 1.5s;
 }
 
-div.col-md-4:hover p.mb-4.title-text {
-    color: #ff952b;
-    transition: all 1s;
+.hero-wrap .overlay {
+    /* background: -webkit-linear-gradient(45deg, #092443 0%, rgba(255, 255, 255, 0) 100%);
+    background: -moz-linear-gradient(45deg, #092443 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #092443), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(45deg, #092443 0%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(45deg, #092443 0%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(45deg, #092443 0%, rgba(255, 255, 255, 0) 100%); */
+    background: linear-gradient(350deg, #47769530 0%, #000000 100%);
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#092443', endColorstr='#ffffff', GradientType=1 ); */
+
+@media only screen and (min-width: 768px) {
+
+    section.dark-bg div.col-md-4 p.body-text.ftco-animate {
+        color: rgba(204, 204, 204, 0.75);
+        transition: all 1.5s;
+    }
+    section.dark-bg div.col-md-4:hover p.body-text.ftco-animate {
+        color: #fff;
+        transition: all 1s;
+    }
+
+    div.col-md-4 p.mb-4.title-text {
+        color: #ff952b;
+        opacity: .5;
+        transition: all 1.5s;
+    }
+
+    div.col-md-4:hover p.mb-4.title-text {
+        color: #ff952b;
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    div.col-md-4 img, div.col-md-6 img {
+        filter: opacity(.9);
+        transform: none;
+        transition: all 1.5s;
+    }
+    div.col-md-4:hover img, div.col-md-6:hover img {
+        filter: opacity(1);
+        transform: scale(1.02);
+        transition: all 1s;
+    }
+
+    div.col-md-6 p.mb-4.title-text {
+        transition: all 1.5s;
+        text-align: center;
+        color:#666666;
+        font-size: 1.5rem;
+        height: 3.5rem;
+    }
+
+    div.col-md-6:hover p.mb-4.title-text {
+        color: #222;
+        transition: all 1.5s;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -144,9 +183,14 @@ div.col-md-4:hover p.mb-4.title-text {
         max-width: 100vw;
     }
 }
+
 /* End COVI19 Styles */
 
 /* Begin Blockquote styles */
+
+blockquote {
+    transition: all .75s;
+}
 
 blockquote:hover {
     color: #111 !important;
@@ -154,15 +198,12 @@ blockquote:hover {
     transition: all .75s;
 }
 
-blockquote {
-    transition: all .75s;
-}
-
 .component{
     /* font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif; */
     width: 750px;
+    max-width: 100%;
     margin:0 auto;
-    padding: 3rem;
+    padding: 1rem;
   }
   
   .component blockquote.quote {
