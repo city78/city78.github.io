@@ -127,6 +127,7 @@ div.col-md-6 p.mb-4.title-text {
     background: -ms-linear-gradient(45deg, #092443 0%, rgba(255, 255, 255, 0) 100%); */
     background: linear-gradient(350deg, #47769530 0%, #000000 100%);
     /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#092443', endColorstr='#ffffff', GradientType=1 ); */
+}
 
 @media only screen and (min-width: 768px) {
 
