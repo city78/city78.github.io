@@ -10537,7 +10537,7 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-    color: #E89640;
+    color: #E89640 !important;
 }
 
 @media (max-width: 991.98px) {
@@ -10550,7 +10550,7 @@ h5,
     }
 
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-        color: #fff;
+        color: #E89640 !important;
     }
 }
 

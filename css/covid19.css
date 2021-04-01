@@ -23,6 +23,24 @@ h1.era-title::first-letter {
     font-size: 1.2em;
 }
 
+a.btn.btn-primary1.p-3.px-4 {
+    width:min-content;
+    min-width;400px;
+    background-color: #e78725;
+    border-radius: 10px;
+    float: none;
+    border-color: #e78725;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 100;
+    margin: 40px auto;
+    font-size: 1.25em;
+}
+
+a.btn.btn-primary1.p-3.px-4:hover {
+    color: #444;
+}
+
 .imageofclients {
     display: block; 
     margin: 2rem auto;
@@ -31,6 +49,26 @@ h1.era-title::first-letter {
 
 section:not(:first-of-type) {
     margin: 3rem auto;
+}
+
+h3.subtitle {
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    font-weight: 200;
+    width: 525px;
+    transition: all 1.5s;
+}
+
+h3.subtitle:hover {
+    transform:scale(1.07);
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 0;
+    top: 0;
 }
 
 /* End COVI19 Styles */
