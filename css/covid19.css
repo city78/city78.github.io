@@ -48,7 +48,7 @@ a.btn.btn-primary1.p-3.px-4:hover {
 }
 
 section:not(:first-of-type) {
-    padding: 4rem auto;
+    padding: 4rem;
 }
 
 h3.subtitle {
@@ -69,6 +69,10 @@ h3.subtitle:hover {
     position: sticky;
     margin: 0;
     top: 0;
+}
+
+body {
+    scroll-behavior: smooth;
 }
 
 /* End COVI19 Styles */

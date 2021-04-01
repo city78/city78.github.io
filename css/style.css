@@ -49,6 +49,8 @@ html {
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
 }
 
 @-ms-viewport {
