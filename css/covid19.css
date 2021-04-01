@@ -52,10 +52,13 @@ a.btn.btn-primary1.p-3.px-4:hover {
 }
 
 div.col-md-4 img, div.col-md-6 img {
+    filter: opacity(.9);
+    transform: none;
     transition: all 1.5s;
 }
 div.col-md-4:hover img, div.col-md-6:hover img {
-    transform: scale(1.05);
+    filter: opacity(1);
+    transform: scale(1.02);
     transition: all 1s;
 }
 
