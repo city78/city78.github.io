@@ -40,7 +40,7 @@ a.btn.btn-primary1.p-3.px-4 {
     transition: all 1.5s;
 }
 
-a.btn.btn-primary1.p-3.px-4:h4 {
+a.btn.btn-primary1.p-3.px-4:hover {
     color: #fff;
     transform: scale(1.02);
     transition: all 1s;
