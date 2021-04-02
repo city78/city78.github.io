@@ -9,7 +9,7 @@
 
 .hero-wrap .slider-text h1 {
     font-size: 4em;
-    font-weight: 400;
+    font-weight: 300;
     color: white;
     text-transform: uppercase;
 }
@@ -34,7 +34,7 @@ a.btn.btn-primary1.p-3.px-4 {
     border-color: #ff952b;
     color: #fff;
     /* font-family: Roboto; */
-    font-weight: 400;
+    font-weight: 300;
     margin: 40px auto;
     font-size: 1.25em;
     transition: all 1.5s;
@@ -52,6 +52,9 @@ a.btn.btn-primary1.p-3.px-4:hover {
     text-align: center;
 }
 
+section {
+    min-height: max-content;
+}
 
 section:not(:first-of-type) {
     padding: 4rem 0;
@@ -93,7 +96,7 @@ p.mb-4.title-text {
     text-align: center;
     color:#fff;
     font-size: 1.25rem;
-    height: 5.5rem
+    min-height: min-content;
 }
 
 section.dark-bg div.col-md-4 p.body-text.ftco-animate {
@@ -116,6 +119,13 @@ div.col-md-4 img, div.col-md-6 img {
 div.col-md-6 p.mb-4.title-text {
     color: #222;
     transition: all 1.5s;
+}
+
+div.col-md-6 p.mb-4.title-text {
+    transition: all 1.5s;
+    text-align: center;
+    color:#666666;
+    font-size: 1.5rem;
 }
 
 .hero-wrap .overlay {
