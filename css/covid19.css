@@ -19,6 +19,11 @@ figure {
     margin-bottom: 1rem;
 }
 
+figure img {
+    height: auto;
+    width: 100%;
+}
+
 figure.left {
     float: left;
     margin-right: 1.5em;
