@@ -14,9 +14,9 @@ p.copy {
 figure {
     display: flex;
     flex-flow: column;
-    width: 45%;
+    width: 100%;
     margin-top: 8px;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 figure.left {
@@ -33,6 +33,8 @@ figcaption {
     text-align: justify;
     font-style: italic;
     font-size: x-small;
+    color: #666666;
+    padding: .2em;
 }
 
 #survey-data {
@@ -56,6 +58,11 @@ figcaption {
         margin-bottom: 0;
     }
     #survey-data > img:first-of-type {
+        margin-bottom: 0;
+    }
+
+    figure {
+        width: 45%;
         margin-bottom: 0;
     }
 }
@@ -202,6 +209,7 @@ div.col-md-6 p.mb-4.title-text {
 .pic-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0,1fr));
+    margin-bottom: 2rem;
 }
 
 .pic-grid div {
@@ -272,7 +280,7 @@ div.col-md-6 p.mb-4.title-text {
 
 @media (max-width: 575.98px) {
     .hero-wrap .slider-text h1 {
-        font-size: 3em;
+        font-size: 2.75em;
         line-height: 1em;
         max-width: 100vw;
     }
@@ -304,9 +312,14 @@ blockquote:hover {
       position: relative; 
       text-align: center;
       padding: 1rem 1.2rem;
-      width: 80%;  /* create space for the quotes */
       color: #777;
       margin: 1rem auto 2rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+      .component blockquote.quote {
+        width: 80%;  /* create space for the quotes */
+      }
   }
 
   .component blockquote.EN {
