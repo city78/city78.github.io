@@ -214,7 +214,6 @@ div.col-md-6 p.mb-4.title-text {
 .pic-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0,1fr));
-    margin-bottom: 2rem;
 }
 
 .pic-grid div {
