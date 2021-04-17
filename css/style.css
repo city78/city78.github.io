@@ -10427,7 +10427,7 @@ body {
     font-size: 16px;
     line-height: 1.8;
     font-weight: 400;
-    color: #b3b3b3;
+    /* color: #b3b3b3; */
 }
 
 body.menu-show {
