@@ -10488,6 +10488,7 @@ h5,
 
 .covid-header {
     height:3em;
+    min-height: min-content;
     width:100%;
     text-align:center;
     margin:0;
