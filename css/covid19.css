@@ -103,7 +103,7 @@ h1.era-title::first-letter {
 a.btn.btn-primary1.p-3.px-4 {
     width:400px;
     min-width:min-content;
-    max-width: 80vw;
+    max-width: 50vw;
     background-color: #ff952b;
     border-radius: 10px;
     float: none;
@@ -149,8 +149,9 @@ h3.subtitle {
     color: white;
     font-weight: 200;
     width: 525px;
-    max-width: 85vw;
+    max-width: 65vw;
     transition: all 1.5s;
+    margin: 0 auto;
 }
 
 h3.subtitle:hover {
