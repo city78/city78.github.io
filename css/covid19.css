@@ -12,7 +12,7 @@ p.copy {
 }
 
 .col {
-    flex-basis: 0;
+    flex-basis: unset;
 }
 
 figure {
