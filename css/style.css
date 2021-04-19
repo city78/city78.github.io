@@ -600,9 +600,9 @@ pre code {
 }
 
 @media (max-width: 575px) {
-    .container {
-        /* padding: 15px; */
-    }
+    /* .container {
+        padding: 15px;
+    } */
 }
 
 @media (min-width: 576px) {
