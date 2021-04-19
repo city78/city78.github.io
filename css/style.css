@@ -10501,6 +10501,9 @@ h5,
     background-color:#e78725;
     color:#333;
     display:block;
+    position: sticky;
+    top:0;
+    z-index: 99;
 }
 
 @media only screen and (min-width:507px) {
