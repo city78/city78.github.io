@@ -128,6 +128,17 @@ a.btn.btn-primary1.p-3.px-4:hover {
     text-align: center;
 }
 
+.imageofclients.sections {
+    margin: .5rem auto;
+    height: 165px;
+    clip-path: circle(70px at center);
+}
+
+.imageofclients.sections img {
+    object-fit: cover;
+    max-height: 165px;
+}
+
 section {
     min-height: max-content;
 }
@@ -253,7 +264,7 @@ div.col-md-6 p.mb-4.title-text {
         color: #ff952b;
         opacity: .5;
         transition: all 1.5s;
-        min-height: 4em;
+        min-height: 5.5em;
     }
 
     div.col-md-4:hover p.mb-4.title-text {
