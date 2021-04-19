@@ -11620,6 +11620,10 @@ textarea.form-control {
     position: relative;
 }
 
+.ftco-section:last-of-type {
+    padding-bottom: 0;
+}
+
 @media (max-width: 767.98px) {
     .ftco-section {
         padding: 6em 0;
