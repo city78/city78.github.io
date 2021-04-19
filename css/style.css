@@ -11131,7 +11131,7 @@ h5,
 }
 
 .text.p-5.text-center * {
-    color: var(--orange);
+    color: white;
 }
 
 @media only screen and (min-width: 575px) {
@@ -11191,7 +11191,7 @@ h5,
     background: #1E3651;
     z-index: 0;
     content: '';
-    opacity: 0;
+    opacity: .35;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -11218,6 +11218,10 @@ h5,
     .package-program .text {
         opacity: 0;
     }
+
+    .package-program:after {
+        opacity: 0;
+    }
 }
 
 .package-program .text h3 {
@@ -11229,7 +11233,14 @@ h5,
 
 .package-program:hover:after,
 .package-program:focus:after {
-    opacity: .5;
+    opacity: .6;
+}
+
+@media only screen and (min-width: 575px) {
+    .package-program:hover:after,
+    .package-program:focus:after {
+        opacity: .5;
+    }
 }
 
 .package-program:hover .text,
