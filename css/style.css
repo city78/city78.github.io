@@ -601,7 +601,8 @@ pre code {
 
 @media (max-width: 575px) {
     .container {
-        padding: 0;
+        /* padding: 0px;
+        width: calc(100% - 30px); */
     }
 }
 
@@ -8813,7 +8814,13 @@ button.bg-dark:focus {
 }
 
 .p-5 {
-    padding: 3rem !important;
+    padding: 1rem !important;
+}
+
+@media only screen and (min-width: 575px) {
+    .p-5 {
+        padding: 3rem !important;
+    }
 }
 
 .pt-5,
@@ -11575,8 +11582,15 @@ textarea.form-control {
 }
 
 .ftco-animate {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media only screen and (min-width: 767.98px) {
+    .ftco-animate {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 .bg-primary {
