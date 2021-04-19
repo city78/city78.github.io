@@ -10487,7 +10487,7 @@ h5,
 }
 
 .covid-header {
-    height:3em;
+    height:4.5em;
     min-height: min-content;
     width:100%;
     text-align:center;
@@ -10495,6 +10495,12 @@ h5,
     background-color:#e78725;
     color:#333;
     display:block;
+}
+
+@media only screen and (min-width:507px) {
+    .covid-header {
+        height: 3em;
+    }
 }
 
 @media (max-width: 991.98px) {
