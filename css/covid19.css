@@ -11,6 +11,10 @@ p.copy {
     margin-left: 5%;
 }
 
+.col {
+    flex-basis: 0;
+}
+
 figure {
     display: flex;
     flex-flow: column;
